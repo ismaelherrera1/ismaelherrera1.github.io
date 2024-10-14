@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/juego.css" />
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="div-burger-logo">
+        <button id="menuButton">
+          <img src="./imgs/header/list.svg" alt="Menu Hamburguesa" class="burger-icon" />
+        </button>
+
+        <button>
+          <a href="loading.html?destino=index.html"><img src="./imgs/logo.svg" alt="Logo Pagina" class="logo-icon" /></a>
+        </button>
+      </div>
+
+      <input type="search" placeholder="Que buscas..?" class="search-input" id="buscador" />
+
+      <div class="div-user-carrito">
+        <button>
+          <img src="./imgs/header/carrito.svg" alt="Carrito" class="carrito-icon" />
+        </button>
+
+        <button>
+          <a href="loading.html?destino=login.html"><img src="./imgs/header/Generic avatar.svg  " alt="User"
+              class="user-icon" /></a>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="body-container solo-desktop">
+
+    <div class="burger-menu hidden-desktop">
+      <ul>
+        <li>
+          <img src="./imgs/menu hamburguesa/bxs_game(1).svg" alt="" />
+          <a href="">Clasicos</a>
+        </li>
+        <li>
+          <img src="./imgs/menu hamburguesa/emojione-v1_game-die(1).svg" alt="" />
+          <a href="">Mesa</a>
+        </li>
+        <li>
+          <img src="./imgs/menu hamburguesa/football icon(1).svg" alt="" />
+          <a href="">Deportes</a>
+        </li>
+        <li>
+          <img src="./imgs/menu hamburguesa/Group.svg" alt="" />
+          <a href="">Comida</a>
+        </li>
+        <li>
+          <img src="./imgs/menu hamburguesa/noto-v1_video-game(1).svg" alt="" />
+          <a href="">Consola </a>
+        </li>
+        <li>
+          <img src="./imgs/menu hamburguesa/twemoji_crossed-swords.svg" alt="" />
+          <a href="">Peleas</a>
+        </li>
+        <li>
+          <img src="./imgs/menu hamburguesa/twemoji--child.svg" alt="" />
+          <a href="">Infantiles</a>
+        </li>
+        <li>
+          <img src="./imgs/menu hamburguesa/openmoji--paintbrush.svg" alt="" />
+          <a href="">Pintar</a>
+        </li>
+        <li>
+          <img src="./imgs/menu hamburguesa/openmoji--basketball.svg" alt="" />
+          <a href="">Baloncesto</a>
+        </li>
+        <li>
+          <img src="./imgs/menu hamburguesa/streamline-emojis--dress.svg" alt="" />
+          <a href="">Vestir</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container-juego">
+
+      <div class="contenedor-juego">
+        <div class="breadcrumbs">
+          <a href="#">Inicio</a> > <a href="#">Juegos</a> >
+          <span>4 en Línea</span>
+        </div>
+        <img src="imgs/juego/juego.svg" alt="">
+      </div>
+
+      <div class="info-juego">
+
+        <div class="descripcion">
+          <h2>4 en Línea (Conecta 4)</h2>
+          <p>
+            ¡Bienvenido a 4 en Línea, el clásico juego de estrategia que desafía
+            tu mente! El objetivo es sencillo: ser el primero en alinear cuatro
+            fichas de tu color en fila, ya sea de forma horizontal, vertical o
+            diagonal. Juega contra un amigo o contra la computadora en esta
+            emocionante batalla de ingenio. ¿Tienes lo que se necesita para
+            superar a tu oponente y lograr el 4 en línea? ¡Pon a prueba tus
+            habilidades y disfruta de la diversión sin fin en este juego
+            atemporal!
+          </p>
+        </div>
+
+        <div class="miniatura">
+          <img src="imgs/juego/video.png" alt="Miniatura del Gameplay" />
+        </div>
+
+      </div>
+
+      <!-- Sección de comentarios -->
+      <div class="comentarios">
+        <!-- Input para agregar un comentario -->
+        <div class="nuevo-comentario">
+          <img src="imgs/juego/vendetta.jpg" alt="Avatar de usuario" class="avatar" />
+          <input type="text" placeholder="Agregar un comentario..." class="input-comentario" />
+          <button class="boton-enviar">Comentar</button>
+        </div>
+
+        <!-- Lista de comentarios -->
+        <div class="comentarios-lista">
+          <div class="comentario">
+            <img src="imgs/juego/vendetta.jpg" alt="Avatar de usuario" class="avatar" />
+            <div class="comentario-texto">
+              <p><strong>player420</strong> Hace 2 horas</p>
+              <p>
+                Este es un gran juego, me encanta la aventura y los gráficos son
+                impresionantes.
+              </p>
+              <div class="like-dislike">
+                <button class="like-button">👍</button>
+                <button class="dislike-button">👎</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="comentario">
+            <img src="imgs/juego/vendetta.jpg" alt="Avatar de usuario" class="avatar" />
+            <div class="comentario-texto">
+              <p><strong>vendettasape</strong> Hace 3 horas</p>
+              <p>El gameplay se ve muy bien, espero poder probarlo pronto.</p>
+              <div class="like-dislike"></div>
+              <button class="like-button">👍</button>
+              <button class="dislike-button">👎</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="recommended-section">
+        <h2>Juegos recomendados para ti</h2>
+
+        <div class="cards-container">
+
+          <div class="card">
+            <img src="./imgs/imagenes_cards/2.jpg" alt="Juego 1" class="card-image">
+            <div class="card-title">
+              <h3>Juego 1</h3>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./imgs/imagenes_cards/15.jpg" alt="Juego 2" class="card-image">
+            <div class="card-title">
+              <h3>Juego 2</h3>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="imgs/imagenes_cards/19.jpg" alt="Juego 3" class="card-image">
+            <div class="card-title">
+              <h3>Juego 3</h3>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="imgs/imagenes_cards/10.jpg" alt="Juego 3" class="card-image">
+            <div class="card-title">
+              <h3>Juego 3</h3>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="conteiner-uno">
+      <div class="logo-footer">
+        <img src="imgs/logo.svg" alt="logo">
+      </div>
+
+      <h1>Acerca de juegos.com</h1>
+
+      <div class="parrafo">
+        <p>¡Olvídate del aburrimiento con La mayor selección de gratis está
+          aquí,
+          para que lleves la diversión al siguiente nivel. Juega online y sin preocupaciones:
+          puedes jugar a todos nuestros  sin descargar. ¡Pero cuidado! Nuestros
+          <span>de
+            acción</span>
+          solo son aptos para los más atrevidos; competirás con grandes pilotos en nuestros <span> de
+            carreras</span>;
+          podrás poner a prueba al estratega que llevas dentro en todos nuestros <span> de
+            estrategia</span>; y sólo los
+          auténticos exploradores llegarán a su meta en los <span> de aventura</span>. Y para los
+          clásicos,
+          las versiones
+          clásicas y no tan clásicas de los clásicos <span> de mesa</span>. ¡Todos los
+           gratis y
+          sin
+          descargar!
+        </p>
+      </div>
+    </div>
+
+    <div class="conteiner-dos">
+      <div class="item">
+        <button class="boton-logo"><img src="imgs/redes/facebook.svg" alt="Facebook"></button>
+        <p class="num">2.700.000</p>
+        <p class="text">Fans</p>
+      </div>
+      <div class="item">
+        <button class="boton-logo"><img src="imgs/redes/insta.svg" alt="Instagram"></button>
+        <p class="num">22.000</p>
+        <p class="text">Seguidores</p>
+      </div>
+      <div class="item">
+        <button class="boton-logo"><img src="imgs/redes/twiiter.svg" alt="Twitter"></button>
+        <p class="num">7.635</p>
+        <p class="text">Seguidores</p>
+      </div>
+    </div>
+
+    <div class="conteiner-tres">
+      <img src="imgs/banderas/brazil flag icon.svg" alt="brasil" class="flag">
+      <img src="imgs/banderas/spanish flag icon.svg" alt="español" class="flag">
+      <img src="imgs/banderas/twemoji--flag-us-outlying-islands.svg" alt="usa" class="flag">
+    </div>
+
+    </div>
+
+    <div class="conteiner-cuatro">
+      <div>
+        <img src="imgs/helps icons/devs icon(1).svg" alt="Desarrolladores" class="hidden-mobile">
+        <p>Developers</p>
+      </div>
+      <div>
+        <img src="imgs/helps icons/privacy icon(1).svg" alt="Privacidad" class="hidden-mobile">
+        <p>Privacy</p>
+      </div>
+      <div>
+        <p>All rights reserved</p>
+      </div>
+      <div>
+        <img src="imgs/helps icons/cookies icon(1).svg" alt="Cookies" class="hidden-mobile">
+        <p>Cookies</p>
+      </div>
+      <div>
+        <img src="imgs/helps icons/help icon(2).svg" alt="Help" class="hidden-mobile">
+        <p>Help</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/input.js"></script>
+  <script src="./js/flags.js"></script>
+  <script src="./js/menuburger.js"></script>
+</body>
+
+</html>

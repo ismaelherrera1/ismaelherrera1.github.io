@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(180, 180, 180);
+}
+
+
+/* CONTENEDOR PRINCIPAL */
+
+.contenedor_login {
+    display: flex; 
+    justify-content: center; 
+    align-items: stretch; 
+    max-width: 800px; 
+    margin: 100px auto; 
+    border-radius: 20px; 
+    overflow: hidden; 
+    height: 410px;
+}
+
+
+/* IMAGEN */
+
+.imagen_login {
+    flex: 1; 
+}
+
+.imagen_login img {
+    width: 100%; 
+    height: auto;
+    border-top-left-radius: 20px; 
+    border-bottom-left-radius: 20px; 
+}
+
+
+.formulario_login {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    max-width: 400px; 
+    padding: 20px; 
+    background-color: rgba(25,25,25,255);
+    border-top-right-radius: 20px; 
+    border-bottom-right-radius: 20px;
+    flex-shrink: 0; 
+}
+
+
+/* ENCABEZADOS */
+
+h2 {
+    text-align: center; 
+    color: rgb(244, 168, 0);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    margin: -10px 0px 28px 0px;
+}
+
+h1 {
+    text-align: center; 
+    margin: 10px 0; 
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 27px;
+    font-weight: 300;
+}
+
+
+/* INPUTS */
+
+.input_container {
+    position: relative; 
+    margin-bottom: 15px;
+    width: 100%; 
+    display: flex; 
+    align-items: center; 
+}
+
+.input {
+    width: 100%;
+    padding: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 18px; 
+    background-color: rgb(217, 217, 217);
+}
+
+
+/* ICONO DE PREGUNTA */
+
+.icono_pregunta {
+    margin-left: 10px; 
+    width: 30px; 
+    height: auto; 
+    cursor: pointer; 
+    transition: transform 0.2s ease-in-out;
+}
+
+.icono_pregunta:hover {
+    transform: scale(1.2); 
+}
+
+
+/* BOTONES */
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons-container button {
+    margin: 0px 15px; 
+    padding: 15px 30px;
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: rgb(244, 168, 0); 
+    transform: scale(1.1); 
+}
+
+button:active {
+    transform: scale(0.95); 
+}
+
+.iniciosesion, .no_cuenta {
+    border: none; 
+    border-radius: 20px;
+    background-color: rgb(43, 44, 47);
+    color: white; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+    font-size: 16px; 
+    height: 60px; 
+}
+
+.registro {
+    display: block; 
+    color: white; 
+    text-decoration: none;
+    text-align: center; 
+    font-size: 16px; 
+}
+
+
+
+
+

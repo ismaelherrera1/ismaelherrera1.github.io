@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: rgb(180, 180, 180);
+}
+
+h1{
+    color: rgb(180, 180, 180) ;
+    margin: 0px;
+}
+
+h2{
+    color: rgba(244,168,0,255);
+    margin-top: 0px;
+    
+}
+
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(25,25,25,255);
+}
+
+
+input{
+    border: 1px solid #ccc; 
+    border-radius: 18px; 
+    background-color: rgb(217,217,217);
+    height: 20px;
+    padding: 10px;
+}
+
+.inputs-container img{
+    height: 30px;
+    width: 30px;
+}
+
+.div-help{
+    display: flex;
+    align-items: center;
+}
+
+.inputs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.inputs-grandes input{
+    width: 363px;
+    margin: 6px;
+}
+
+.inputs-chicos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    justify-content: center;
+}
+
+.inputs-chicos input{
+    width: 100px;
+    margin: 6px;
+}
+
+.inputs-medianos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs-medianos input{
+    width: 166px;
+    margin: 6px;
+}
+
+
+
+/*BOTONES*/
+
+button {
+    padding: 15px 30px; 
+    border: none; 
+    border-radius: 20px; 
+    background-color: rgb(43, 44, 47); 
+    color: white; 
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: rgb(244, 168, 0); 
+    transform: scale(1.1); 
+}
+
+button:active {
+    transform: scale(0.95); 
+}
+
+.help-icon {
+    cursor: pointer; 
+    transition: transform 0.2s ease-in-out;
+}
+
+.help-icon:hover {
+    transform: scale(1.2); 
+}
+
+.buttons-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f9f9f9;
+}
+
+.buttons-container input{
+    width: 20px;
+    height: 20px;
+}
+
+.buttons-container div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px 0px 20px;
+
+}
+
+.buttons-container img{
+    height: 30px;
+    width: 30x;
+}
+

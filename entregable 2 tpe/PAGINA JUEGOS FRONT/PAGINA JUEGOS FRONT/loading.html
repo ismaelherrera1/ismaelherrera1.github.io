@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading</title>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/loading.css">
+</head>
+<body>
+    <div>
+        <div class="loader">
+            <svg viewBox="0 0 80 80">
+                <circle id="test" cx="40" cy="40" r="32"></circle>
+            </svg>
+        </div>
+
+        <div class="loader triangle">
+            <svg viewBox="0 0 86 80">
+                <polygon points="43 8 79 72 7 72"></polygon>
+            </svg>
+        </div>
+
+        <div class="loader">
+            <svg viewBox="0 0 80 80">
+                <rect x="8" y="8" width="64" height="64"></rect>
+            </svg>
+        </div>
+    </div>
+    <div class="progress-bar-container">
+        <div class="progress-bar"></div>
+        <div class="progress-percentage" id="progressPercentage">0%</div>
+    </div>
+    
+   
+    <a class="dribbble" href="https://dribbble.com/shots/5878367-Loaders" target="_blank"><img src="https://cdn.dribbble.com/assets/dribbble-ball-mark-2bd45f09c2fb58dbbfb44766d5d1d07c5a12972d602ef8b32204d28fa3dda554.svg" alt=""></a>
+    
+    <script>
+        function obtenerParametroDestino() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('destino');
+        }
+
+        function startProgressBar() {
+            const progressBar = document.querySelector('.progress-bar');
+            const progressPercentage = document.getElementById('progressPercentage');
+            let width = 0;
+            const irregularIntervals = [500, 300, 1000, 700, 600, 400]; // Intervalos irregulares
+            let index = 0;
+
+            function increaseProgress() {
+                if (width >= 100) return;
+
+                
+                const increase = Math.random() * (20 - 10) + 10;
+                width = Math.min(width + increase, 100);
+                progressBar.style.width = width + '%';
+                progressPercentage.textContent = Math.floor(width) + '%';
+
+                
+                if (index < irregularIntervals.length) {
+                    setTimeout(increaseProgress, irregularIntervals[index]);
+                    index++;
+                }
+            }
+
+            increaseProgress();
+        }
+
+        
+        startProgressBar();
+
+        
+        const destino = obtenerParametroDestino();
+
+        if (destino) {
+            setTimeout(function() {
+                window.location.href = destino;
+            }, 5000); 
+        } else {
+            console.error('No se especificó una página de destino.');
+        }
+    </script>
+</body>
+</html>
